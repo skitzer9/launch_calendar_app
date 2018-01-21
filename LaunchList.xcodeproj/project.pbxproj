@@ -103,8 +103,8 @@
 			children = (
 				BF515097201468AA00F1901A /* AppDelegate.swift */,
 				BF515099201468AA00F1901A /* LaunchView.swift */,
-				BF5150C72014722E00F1901A /* LaunchInfo.swift */,
-				BF5150C52014704B00F1901A /* CardViewCell.swift */,
+				BF51510720153A1C00F1901A /* OfflineData */,
+				BF515105201539EB00F1901A /* UI */,
 				BF51509B201468AA00F1901A /* Main.storyboard */,
 				BF51509E201468AA00F1901A /* Assets.xcassets */,
 				BF5150A0201468AA00F1901A /* LaunchScreen.storyboard */,
@@ -129,6 +129,24 @@
 				BF5150B9201468AB00F1901A /* Info.plist */,
 			);
 			path = LaunchListUITests;
+			sourceTree = "<group>";
+		};
+		BF515105201539EB00F1901A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BF5150C52014704B00F1901A /* CardViewCell.swift */,
+			);
+			name = UI;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		BF51510720153A1C00F1901A /* OfflineData */ = {
+			isa = PBXGroup;
+			children = (
+				BF5150C72014722E00F1901A /* LaunchInfo.swift */,
+			);
+			name = OfflineData;
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

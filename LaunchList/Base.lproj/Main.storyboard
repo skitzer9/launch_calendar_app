@@ -46,15 +46,15 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LaunchCard" rowHeight="112" id="qEr-Qd-RKe" customClass="CardViewCell" customModule="LaunchList" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="112"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CardViewCell" rowHeight="120" id="qEr-Qd-RKe" customClass="CardViewCell" customModule="LaunchList" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qEr-Qd-RKe" id="LA0-0z-8rb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9g-dX-fmc">
-                                            <rect key="frame" x="8" y="4" width="359" height="104"/>
+                                            <rect key="frame" x="8" y="8" width="359" height="104"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dec" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcI-bI-2Tn">
                                                     <rect key="frame" x="10" y="10" width="84" height="33.5"/>
@@ -122,10 +122,11 @@
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstItem="W9g-dX-fmc" firstAttribute="top" secondItem="LA0-0z-8rb" secondAttribute="top" constant="4" id="2Ds-Rv-c4z"/>
+                                        <constraint firstItem="W9g-dX-fmc" firstAttribute="top" secondItem="LA0-0z-8rb" secondAttribute="top" constant="8" id="2Ds-Rv-c4z"/>
                                         <constraint firstItem="W9g-dX-fmc" firstAttribute="leading" secondItem="LA0-0z-8rb" secondAttribute="leading" constant="8" id="KAg-tM-gM0"/>
-                                        <constraint firstAttribute="bottom" secondItem="W9g-dX-fmc" secondAttribute="bottom" constant="4" id="bMY-uE-ODK"/>
+                                        <constraint firstAttribute="bottom" secondItem="W9g-dX-fmc" secondAttribute="bottom" constant="8" id="bMY-uE-ODK"/>
                                         <constraint firstAttribute="trailing" secondItem="W9g-dX-fmc" secondAttribute="trailing" constant="8" id="sqs-lS-Zhx"/>
                                     </constraints>
                                 </tableViewCellContentView>

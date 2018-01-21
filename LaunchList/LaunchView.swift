@@ -17,7 +17,7 @@ class LaunchView: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        tableView.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 1.0);
+        tableView.backgroundColor = UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1.0);
         
         let data1 = LaunchInfo.Builder()
             .setTitle(title: "Falcon Heavy")
@@ -59,7 +59,7 @@ class LaunchView: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LaunchCard", for: indexPath) as! CardViewCell;
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CardViewCell", for: indexPath) as! CardViewCell;
         
         //cell.textLabel?.text = tableData[indexPath.row];
         
@@ -78,7 +78,9 @@ class LaunchView: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("Selected row: \(tableData[indexPath.row].title)")
+    }
     
 
 
