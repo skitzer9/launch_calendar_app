@@ -49,8 +49,8 @@
 		BF5150B3201468AB00F1901A /* LaunchListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5150B7201468AB00F1901A /* LaunchListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListUITests.swift; sourceTree = "<group>"; };
 		BF5150B9201468AB00F1901A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF5150C52014704B00F1901A /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
-		BF5150C72014722E00F1901A /* LaunchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInfo.swift; sourceTree = "<group>"; };
+		BF5150C52014704B00F1901A /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardViewCell.swift; path = ../UI/CardViewCell.swift; sourceTree = "<group>"; };
+		BF5150C72014722E00F1901A /* LaunchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchInfo.swift; path = ../OfflineData/LaunchInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF11511520153B290000EC48 /* OnlineData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnlineData;
+			sourceTree = "<group>";
+		};
 		BF51508B201468AA00F1901A = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +108,11 @@
 		BF515096201468AA00F1901A /* LaunchList */ = {
 			isa = PBXGroup;
 			children = (
-				BF515097201468AA00F1901A /* AppDelegate.swift */,
-				BF515099201468AA00F1901A /* LaunchView.swift */,
+				BF11511520153B290000EC48 /* OnlineData */,
 				BF51510720153A1C00F1901A /* OfflineData */,
 				BF515105201539EB00F1901A /* UI */,
+				BF515097201468AA00F1901A /* AppDelegate.swift */,
+				BF515099201468AA00F1901A /* LaunchView.swift */,
 				BF51509B201468AA00F1901A /* Main.storyboard */,
 				BF51509E201468AA00F1901A /* Assets.xcassets */,
 				BF5150A0201468AA00F1901A /* LaunchScreen.storyboard */,
@@ -136,8 +144,7 @@
 			children = (
 				BF5150C52014704B00F1901A /* CardViewCell.swift */,
 			);
-			name = UI;
-			path = "New Group";
+			path = UI;
 			sourceTree = "<group>";
 		};
 		BF51510720153A1C00F1901A /* OfflineData */ = {
@@ -145,8 +152,7 @@
 			children = (
 				BF5150C72014722E00F1901A /* LaunchInfo.swift */,
 			);
-			name = OfflineData;
-			path = "New Group1";
+			path = OfflineData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
