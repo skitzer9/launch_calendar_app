@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		BF515098201468AA00F1901A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF515097201468AA00F1901A /* AppDelegate.swift */; };
-		BF51509A201468AA00F1901A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF515099201468AA00F1901A /* ViewController.swift */; };
+		BF51509A201468AA00F1901A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF515099201468AA00F1901A /* LaunchView.swift */; };
 		BF51509D201468AA00F1901A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF51509B201468AA00F1901A /* Main.storyboard */; };
 		BF51509F201468AA00F1901A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF51509E201468AA00F1901A /* Assets.xcassets */; };
 		BF5150A2201468AA00F1901A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5150A0201468AA00F1901A /* LaunchScreen.storyboard */; };
 		BF5150AD201468AB00F1901A /* LaunchListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5150AC201468AB00F1901A /* LaunchListTests.swift */; };
 		BF5150B8201468AB00F1901A /* LaunchListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5150B7201468AB00F1901A /* LaunchListUITests.swift */; };
+		BF5150C62014704B00F1901A /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5150C52014704B00F1901A /* CardViewCell.swift */; };
+		BF5150C82014722E00F1901A /* LaunchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5150C72014722E00F1901A /* LaunchInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		BF515094201468AA00F1901A /* LaunchList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF515097201468AA00F1901A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF515099201468AA00F1901A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF515099201468AA00F1901A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		BF51509C201468AA00F1901A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF51509E201468AA00F1901A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5150A1201468AA00F1901A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		BF5150B3201468AB00F1901A /* LaunchListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaunchListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5150B7201468AB00F1901A /* LaunchListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListUITests.swift; sourceTree = "<group>"; };
 		BF5150B9201468AB00F1901A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5150C52014704B00F1901A /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		BF5150C72014722E00F1901A /* LaunchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				BF515097201468AA00F1901A /* AppDelegate.swift */,
-				BF515099201468AA00F1901A /* ViewController.swift */,
+				BF515099201468AA00F1901A /* LaunchView.swift */,
+				BF5150C72014722E00F1901A /* LaunchInfo.swift */,
+				BF5150C52014704B00F1901A /* CardViewCell.swift */,
 				BF51509B201468AA00F1901A /* Main.storyboard */,
 				BF51509E201468AA00F1901A /* Assets.xcassets */,
 				BF5150A0201468AA00F1901A /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF51509A201468AA00F1901A /* ViewController.swift in Sources */,
+				BF5150C62014704B00F1901A /* CardViewCell.swift in Sources */,
+				BF51509A201468AA00F1901A /* LaunchView.swift in Sources */,
+				BF5150C82014722E00F1901A /* LaunchInfo.swift in Sources */,
 				BF515098201468AA00F1901A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
