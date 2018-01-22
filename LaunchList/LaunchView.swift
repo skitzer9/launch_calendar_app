@@ -9,10 +9,20 @@
 import UIKit
 
 
-class LaunchView: UITableViewController {
+class LaunchView: UITableViewController, DownloadDataDelegate {
+    
+    
+    func didReceiveData(packet: DownloadPacket) {
+        if let data = packet.data {
+            Parser.getLaunchList(jsonData: data);
+        } else {
+            NSLog("Error = \(packet.error)");
+        }
+    }
+    
     
     private var tableData = [LaunchInfo]()
-    
+    private var downloadManager: DownloadData!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +57,9 @@ class LaunchView: UITableViewController {
         tableData.append(data2);
         tableData.append(data3);
         
+        downloadManager = DownloadData(dbInfo: .Calendar);
+        downloadManager.delegate = self;
+        downloadManager.downloadData();
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
