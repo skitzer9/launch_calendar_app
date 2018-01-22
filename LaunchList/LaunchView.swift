@@ -10,17 +10,6 @@ import UIKit
 
 
 class LaunchView: UITableViewController, DownloadDataDelegate {
-    
-    
-    func didReceiveData(packet: DownloadPacket) {
-        if let data = packet.data {
-            Parser.getLaunchList(jsonData: data);
-        } else {
-            NSLog("Error = \(packet.error)");
-        }
-    }
-    
-    
     private var tableData = [LaunchInfo]()
     private var downloadManager: DownloadData!;
     
@@ -95,7 +84,19 @@ class LaunchView: UITableViewController, DownloadDataDelegate {
         NSLog("Selected row: \(tableData[indexPath.row].title)")
     }
     
-
+    func didReceiveData(packet: DownloadPacket) {
+        if let data = packet.data {
+            if let list = Parser.getLaunchList(jsonData: data) {
+                //tableData = list;
+                //NSLog("Reloading table data...");
+                self.tableView.reloadData();
+            } else {
+                NSLog("LIST WAS NULL");
+            }
+        } else {
+            NSLog("Error = \(packet.error)");
+        }
+    }
 
 }
 

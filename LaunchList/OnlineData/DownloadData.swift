@@ -72,7 +72,7 @@ class DownloadData: NSObject {
     /** Query filtering variables */
     public var queryType: LaunchQuery!
     public var filterQuery: QueryFilter!
-    public var queryMode: QueryMode = .list
+    public var queryMode: QueryMode = .verbose
     
     /** Raw and processed data variables */
     private(set) var stringData: String?

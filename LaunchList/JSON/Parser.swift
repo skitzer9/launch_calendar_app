@@ -20,7 +20,7 @@ class Parser: NSObject {
         }
     }
     
-    static func getLaunchList(jsonData: Data?) -> Void {
+    static func getLaunchList(jsonData: Data?) -> [LaunchInfo]? {
         var cal: LaunchCalendar? = nil;
         
         if let data = jsonData {
@@ -31,15 +31,21 @@ class Parser: NSObject {
         }
         
         if (cal != nil) {
-            
+            var list = [LaunchInfo]()
             for item in (cal?.launches)! {
-                print("===========================")
-                print("ID:    \(item.id)")
-                print("Title: \(item.name)")
-                print("Date:  \(item.net)")
-                print("===========================")
+                let li = LaunchInfo.init(entry: item);
+                list.append(li);
+                li.printFields();
+//                print("===========================")
+//                print("ID:    \(item.id)")
+//                print("Title: \(item.name)")
+//                print("Date:  \(item.net)")
+//                print("===========================")
             }
+            return list;
         }
+        
+        return nil;
         
     }
 }
